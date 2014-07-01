@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block title%}Running Test {{test.name}}{%endblock%}
+
+{%block body%}
+<input type="hidden" id="test-id" value="{{test.id}}" />
+<dl class="list-tests">
+{%for group in test.items%}
+	<dt id="group-{{forloop.counter}}" class="group">{% autoescape off %}{{group.title}}{% endautoescape %}<div class="progress"><span class="done">0</span>/<span class="all">0</span></div></dt>
+	{% with group_id=forloop.counter %}
+	{%for item in group.items%}
+	<dd class="item pending" group="group-{{group_id}}">
+		<span>{% autoescape off %}{{item}}{% endautoescape %}</span>
+		<div class="btns btns-pending">
+			<a href="javascript:void(0)" class="btn btn-success btn-small btn-item-action">PASS</a>
+			<a href="javascript:void(0)" class="btn btn-fail btn-small btn-item-action">FAIL</a>
+		</div>
+		<div class="btns btns-done">
+			<a href="javascript:void(0)" class="btn btn-primary btn-small btn-item-action">REOPEN</a>
+		</div>
+	</dd>
+	{%endfor%}
+	{%endwith%}
+{%endfor%}
+</dl>
+<div style="margin:40px 0;text-align:right;">
+	<a class="btn-save-test btn btn-primary" href="javascript:void(0)">Mark as Completed</a>
+</div>
+{%endblock%}

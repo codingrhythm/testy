@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/testy/!svn/ver/12/trunk/testy/templates
+END
+management.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/testy/!svn/ver/7/trunk/testy/templates/management.html
+END
+result.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/testy/!svn/ver/7/trunk/testy/templates/result.html
+END
+form-test.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/testy/!svn/ver/7/trunk/testy/templates/form-test.html
+END
+tests.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/testy/!svn/ver/7/trunk/testy/templates/tests.html
+END
+run.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/testy/!svn/ver/7/trunk/testy/templates/run.html
+END
+doc.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/testy/!svn/ver/7/trunk/testy/templates/doc.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/testy/!svn/ver/12/trunk/testy/templates/index.html
+END
+help.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/testy/!svn/ver/7/trunk/testy/templates/help.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/testy/!svn/ver/7/trunk/testy/templates/base.html
+END

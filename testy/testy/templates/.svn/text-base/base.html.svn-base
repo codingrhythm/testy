@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Testy</title>
+	<link href="{{STATIC_URL}}css/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="nav">
+		<a class="logo" href="/">Logo</a>
+		<ul class="clearfix">
+			<li {%if p == 'overview'%}class="active"{%endif%}><a href="/">Overview</a></li>
+			<li {%if p == 'management'%}class="active"{%endif%}><a href="/management/">Management</a></li>
+			<li {%if p == 'tests'%}class="active"{%endif%}><a href="/tests/">Test Reports</a></li>
+			<li {%if p == 'document'%}class="active"{%endif%}><a href="/doc/">Document</a></li>
+		</ul>
+	</div>
+
+	<div class="wrap">
+		<div class="top">{%block title%}{{p}}{%endblock%}</div>
+		<div class="container">
+			{%block body%}{%endblock%}
+		</div>
+	</div>
+	<div class="footer">
+		Developed by Zhu Yuzhou
+	</div>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/app.js"></script>
+</body>
+</html>

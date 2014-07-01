@@ -1,0 +1,80 @@
+*{font-family: Arial,sans-serif;}
+body{margin: 0;padding: 20px 10px 10px;background: #222;color: #333;}
+a{text-decoration: none;color:#049cdb;padding: 0 5px;}
+a:hover{background:#049cdb;color: #fff; }
+.clearfix{*zoom:1;}
+.clearfix:before,
+.clearfix:after{display: table;content: "";line-height: 0}
+.clearfix:after{clear:both}
+.input{font-size: 20px;padding: 10px 15px;border:1px solid #ccc;}
+textarea{resize:none;}
+
+.nav{position: relative;}
+.nav .logo{width: 100px;height: 38px;position: absolute;left: 20px;top: 0;background: url('../imgs/logo.png') no-repeat;text-indent: -9999px;display: block;}
+.nav ul{margin: 0;padding: 10px 0 0 170px;}
+.nav ul li{margin: 0 10px 0 0; padding: 0; list-style: none;float: left}
+.nav ul li a{color:#ccc;padding:5px 15px;display: block;background: #444;}
+.nav ul li a:hover{background: #555;}
+.nav ul li.active a,
+.nav ul li.active a:hover{background: #E4F5CA;color:#45553B;}
+
+.wrap{background: #F8FAF4;}
+.container{padding: 20px;}
+
+.top{background: #E4F5CA;color:#45553B;font-size: 24px;text-transform: capitalize;padding: 15px;border-bottom: 1px solid #B0CCB8}
+
+.btn{padding: 10px 20px;color: #fff;font-size: 14px;}
+.btn-small{padding: 5px 10px;font-size: 12px;}
+.btn-large{font-size: 20px;}
+.btn-success:hover,
+.btn-success{background: #46a546;}
+.btn-fail:hover,
+.btn-fail{background: #9d261d;}
+.btn-primary:hover,
+.btn-primary{background: #049cdb;}
+.btn:hover{opacity: 0.8;}
+
+.tag{background: #049cdb;color: #fff;font-size: 11px;padding: 3px 8px;border: 1px solid transparent;border-radius: 10px;}
+.tag-red:hover,
+.tag-red{background: #9d261d}
+.tag-green:hover,
+.tag-green{background: #46a546;}
+
+.action-btn{font-size: 16px;}
+
+.action{padding: 20px 20px 20px 0;height: 40px;}
+
+form .line{margin-bottom: 20px;}
+form .line .input{width: 90%;}
+form .line .help{color: #888;font-size: 12px;}
+
+pre{background: #fff;border:1px dashed #ccc;padding: 10px;margin: 10px;line-height: 20px;font-size: 12px}
+
+ul.list{margin: 0 200px 0 0;padding: 0;}
+ul.list li{background: #fff;margin-bottom: 20px;list-style: none;padding: 20px;box-shadow: 0 0 5px rgba(0,0,0,0.2);border:1px solid #ccc;border-radius: 10px;position: relative;}
+ul.list li:hover{box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+ul.list li .name{font-size: 18px;}
+ul.list li .path span{font-size: 14px;padding: 5px 10px;border: 1px solid #ddd;background: #eee;color: #999;border-radius: 3px;}
+ul.list li .path{margin: 20px 0 30px;}
+ul.list li .operations{position: absolute;width: 120px;right: -121px;top:20px;}
+
+ul.list li .operations a{background-color: #E6E8E3;border-radius: 0 3px 3px 0;color: #737472;display: block;font-size: 14px;padding: 0.6em 0.75em 0.6em 25px;position: relative;text-decoration: none;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);border:1px solid #d5d5d5;margin-bottom: 10px}
+ul.list li .operations a:hover{background: #ddd;}
+
+dl.list-tests{}
+dl.list-tests dt{background: #333;padding: 10px;font-weight: bold;margin: 20px 0 10px;color: #eee;position: relative;}
+dl.list-tests dt div.progress{position: absolute;right:10px; top: 10px;}
+dl.list-tests dd{padding:10px;margin:0;cursor: default; border-bottom: 1px solid #eee;position: relative;}
+dl.list-tests dd.pending:hover{color: #ccc;}
+dl.list-tests dd.closed span{color: #ccc;font-style: italic;text-decoration: line-through;}
+dl.list-tests dd.failed{background: #FDD6D6;}
+dl.list-tests dd.failed span{color: #9d261d;}
+dl.list-tests dd .btns{display:none;position: absolute;right:10px;top:8px;}
+
+.home-btns{text-align: center;padding: 50px;}
+.home-btns .btn{margin: 0 20px;}
+
+h1.big{text-align: center;font-size: 40px;font-weight: 300;line-height: 60px;}
+
+.footer{color: #9B9680;font-size: 10px;padding: 20px 0;}
+

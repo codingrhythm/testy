@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<ul class="list">
+	{%for item in tests%}
+	<li>
+		<div class="name">{{item.test.name}}</div>
+		<div class="path"><span>{{item.test_date}}</span></div>
+		<div class="links">{%if item.fails > 0%}<a href="#" class="tag tag-red">{{item.fails}} fails</a>{% endif%}</div>
+		<div class="operations">
+			<a href="/result/{{item.id}}/">View Result</a>
+			<a href="/test/?id={{item.test_id}}">Edit Test</a>
+		</div>
+	</li>
+	{%endfor%}
+<ul>
+{%endblock%}

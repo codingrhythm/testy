@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<h1 id="contents">Test Contents Format</h1>
+<h2>Group</h2>
+<p>Format: g:Group Name</p>
+<p>Example: g:Timeline记录加载测试</p>
+<h2>Item</h2>
+<p>Items <strong>MUST</strong> be defined under its group.</p>
+<p>Format: i:Item Name</p>
+<p>Example: i:进到timeline页面，不往下拉滚动条，看看记录是否会加载</p>
+<h2>Import from other tests</h2>
+<p>You can import items from a specific test like this: t:dummy-test</p>
+<h2>Complete Example</h2>
+<pre>
+g:timeline记录加载
+i:进到timeline页面，不往下拉滚动条，看看记录是否会加载
+i:往下拉滚动条，看看是否继续加载
+i:点击右上角时间线，看看是否会跳到指定的位置
+
+t:dummy-test
+</pre>
+{%endblock%}

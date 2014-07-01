@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<h1 class="big">Thanks for using testy! <br/>There are <a href="/tests/">{{tests_count}} tests</a> and <a href="/management/">{{results_count}} test reports</a>.</h1>
+<div class="home-btns">
+	<a class="btn btn-success btn-large" href="/test/">Create New Test Now</a> or <a class="btn btn-primary btn-large" href="/doc/">Read Documentation</a>
+</div>
+{%endblock%}

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/testy/!svn/ver/12/trunk
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/testy/!svn/ver/2/trunk/manage.py
+END
+testy.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/testy/!svn/ver/7/trunk/testy.sqlite3
+END

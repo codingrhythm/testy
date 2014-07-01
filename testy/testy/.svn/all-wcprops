@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/testy/!svn/ver/12/trunk/testy
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/testy/!svn/ver/2/trunk/testy/wsgi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/testy/!svn/ver/2/trunk/testy/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/testy/!svn/ver/10/trunk/testy/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/testy/!svn/ver/7/trunk/testy/urls.py
+END

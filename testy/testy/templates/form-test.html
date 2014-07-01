@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<form method="POST" action="">{% csrf_token %}
+	{%if id%}<input type="hidden" name="id" value="{{id}}" />{%endif%}
+	<div class="line">
+		<input type="text" class="input" placeholder="Test Name" name="name" value="{{name}}" />
+	</div>
+	<div class="line">
+		<input type="text" class="input" placeholder="Test Path" name="path" value="{{path}}" />
+		<div class="help">e.g. timeline-test, so it will import all items from this test if you use t:timeline-test</div>
+	</div>
+	<div class="line">
+		<textarea class="input" name="contents" style="height:400px;font-size:14px;" placeholder="Test Contents">{{contents}}</textarea>
+		<div class="help">Please refer to the <a href="/doc/#contents" target="_blank">Format Documents</a>.</div>
+	</div>
+	<div class="line">
+		<input type="submit" value="Save Changes" class="action-btn" />
+	</div>
+</form>
+{%endblock%}

@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block body%}
+	<div class="action">
+		<a href="/test/" class="btn btn-success">Add Test</a>
+	</div>
+
+	<ul class="list">
+		{%for item in tests%}
+		<li>
+			<div class="name">{{item.name}}</div>
+			<div class="path"><span>t:{{item.path}}</span></div>
+			<div class="links">
+				<a href="/test/?id={{item.id}}" class="tag">{{item.num_of_items}} test items</a>
+				{%if item.cases.all.count > 0%}<a href="/tests/?id={{item.id}}" class="tag tag-green">{{item.cases.all.count}} test results</a>{%endif%}
+			</div>
+			<div class="operations">
+				<a href="/run/{{item.id}}/">Run Test</a>
+				<a href="/test/?id={{item.id}}">Edit Test</a>
+			</div>
+		</li>
+		{%endfor%}
+	</ul>
+{%endblock%}

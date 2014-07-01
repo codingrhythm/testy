@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block title%}Test Result for {{result.test.name}}{%endblock%}
+
+{%block body%}
+<dl class="list-tests">
+{% autoescape off %}
+	{{result.report}}
+{% endautoescape %}
+</dl>
+
+{%endblock%}
